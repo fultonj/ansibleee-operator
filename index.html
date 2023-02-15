@@ -6,28 +6,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Ansible EE Operator">
+        <meta name="description" content="OpenStack Ansible EE Operator">
       
       
-        <meta name="author" content="Ansible EE Team">
+        <meta name="author" content="OpenStack Team">
       
       
-        <link rel="canonical" href="https://openstack-k8s-operators.github.io/ansibleee-operator/">
+        <link rel="canonical" href="https://openstack-k8s-operators.github.io/openstack-ansibleee-operator/">
       
       
       
-        <link rel="next" href="ansibleee/">
+        <link rel="next" href="openstack_ansibleee/">
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>Ansible EE Operator</title>
+        <title>OpenStack Ansible EE Operator</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6b71719e.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.0d440cfe.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
   
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ansibleee-operator" class="md-skip">
+        <a href="#openstack-ansible-ee-operator" class="md-skip">
           Skip to content
         </a>
       
@@ -93,10 +93,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Ansible EE Operator" class="md-header__button md-logo" aria-label="Ansible EE Operator" data-md-component="logo">
+    <a href="." title="OpenStack Ansible EE Operator" class="md-header__button md-logo" aria-label="OpenStack Ansible EE Operator" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="images/openstack-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Ansible EE Operator
+            OpenStack Ansible EE Operator
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -122,7 +121,7 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -130,7 +129,7 @@
           
         
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -173,7 +172,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -182,13 +181,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/openstack-k8s-operators/ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/openstack-k8s-operators/openstack-ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    openstack-k8s-operators/ansibleee-operator
+    openstack-k8s-operators/openstack-ansibleee-operator
   </div>
 </a>
       </div>
@@ -217,23 +216,22 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Ansible EE Operator" class="md-nav__button md-logo" aria-label="Ansible EE Operator" data-md-component="logo">
+    <a href="." title="OpenStack Ansible EE Operator" class="md-nav__button md-logo" aria-label="OpenStack Ansible EE Operator" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="images/openstack-logo.png" alt="logo">
 
     </a>
-    Ansible EE Operator
+    OpenStack Ansible EE Operator
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/openstack-k8s-operators/ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/openstack-k8s-operators/openstack-ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    openstack-k8s-operators/ansibleee-operator
+    openstack-k8s-operators/openstack-ansibleee-operator
   </div>
 </a>
     </div>
@@ -251,15 +249,67 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-and-deploy" class="md-nav__link">
+    Build and deploy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use" class="md-nav__link">
+    Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-development-cycle" class="md-nav__link">
+    Example Development Cycle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-openstack-ansibleee-operator-with-edpm-ansible" class="md-nav__link">
+    Using openstack-ansibleee-operator with EDPM Ansible
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -278,16 +328,16 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Custom Resources
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Custom Resources" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Custom Resources
@@ -300,8 +350,8 @@
   
   
     <li class="md-nav__item">
-      <a href="ansibleee/" class="md-nav__link">
-        AnsibleEE
+      <a href="openstack_ansibleee/" class="md-nav__link">
+        OpenStackAnsibleEE
       </a>
     </li>
   
@@ -349,6 +399,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build-and-deploy" class="md-nav__link">
+    Build and deploy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use" class="md-nav__link">
+    Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-development-cycle" class="md-nav__link">
+    Example Development Cycle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-openstack-ansibleee-operator-with-edpm-ansible" class="md-nav__link">
+    Using openstack-ansibleee-operator with EDPM Ansible
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -366,97 +452,89 @@
 
 
 
-<h1 id="ansibleee-operator">ansibleee-operator<a class="headerlink" href="#ansibleee-operator" title="Permanent link">#</a></h1>
-<p>An operator to deploy and run an Ansible Execution Environment container on Openshit</p>
-<h1 id="build-and-deploy">Build and deploy<a class="headerlink" href="#build-and-deploy" title="Permanent link">#</a></h1>
+<h1 id="openstack-ansible-ee-operator">OpenStack Ansible EE operator<a class="headerlink" href="#openstack-ansible-ee-operator" title="Permanent link">#</a></h1>
+<p>An operator to deploy and run an OpenStack Ansible Execution Environment container on Openshift</p>
+<h2 id="build-and-deploy">Build and deploy<a class="headerlink" href="#build-and-deploy" title="Permanent link">#</a></h2>
 <p>It uses operator-sdk to build and run.</p>
-<p>To build and push to a docker repository
-<div class="highlight"><pre><span></span><code>make docker-build docker-push IMG=&quot;&lt;your image name&gt;&quot;
-</code></pre></div></p>
-<p>To deploy in to the cluster
-<div class="highlight"><pre><span></span><code>make deploy IMG=&quot;&lt;your image name&gt;&quot;
-</code></pre></div></p>
-<p>To undeploy it from the cluster
-<div class="highlight"><pre><span></span><code>make undeploy
-</code></pre></div></p>
-<h1 id="use">Use<a class="headerlink" href="#use" title="Permanent link">#</a></h1>
-<p>Once the operator has been deployed succesfully to the openshift/kubernetes cluster, you can see it in action by creating a new "ansibleee" CR. </p>
+<p>To build and push to a docker repository</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>docker-build<span class="w"> </span>docker-push<span class="w"> </span><span class="nv">IMG</span><span class="o">=</span><span class="s2">&quot;&lt;your image name&gt;&quot;</span>
+</code></pre></div>
+<p>To deploy in to the cluster</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>deploy<span class="w"> </span><span class="nv">IMG</span><span class="o">=</span><span class="s2">&quot;&lt;your image name&gt;&quot;</span>
+</code></pre></div>
+<p>To undeploy it from the cluster</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>undeploy
+</code></pre></div>
+<h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">#</a></h2>
+<p>Once the operator has been deployed succesfully to the openshift/kubernetes cluster, you can see it in action by creating a new "ansibleee" CR.</p>
 <p>There are some examples on the examples directory.</p>
-<p>The first one is ansibleee-playbook-local.yaml. This wil execute locally the playbook "test.yaml", which will run some checks on the container where ansible-runner is being executed.
-<div class="highlight"><pre><span></span><code>oc apply -f examples/ansibleee-playbook-local.yaml
-</code></pre></div></p>
-<p>There are other examples that also execute locally the playbook "test.yaml", but that serve as extraMounts demonstration: ansibleee-extravolumes.yaml and ansibleee-extravolumes_2_secret.yaml that need the secrets ceph-secret-example.yaml and ceph-secret-example2.yaml created:
-<div class="highlight"><pre><span></span><code>oc apply -f ceph-secret-example.yaml
-oc apply -f ceph-secret-example2.yaml
-oc apply -f examples/ansibleee-extravolumes.yaml
-</code></pre></div></p>
+<p>The first one is ansibleee-playbook-local.yaml. This wil execute locally the playbook "test.yaml", which will run some checks on the container where ansible-runner is being executed.</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/openstack-ansibleee-playbook-local.yaml
+</code></pre></div>
+<p>There are other examples that also execute locally the playbook "test.yaml", but that serve as extraMounts demonstration: ansibleee-extravolumes.yaml and ansibleee-extravolumes_2_secret.yaml that need the secrets ceph-secret-example.yaml and ceph-secret-example2.yaml created:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ceph-secret-example.yaml
+oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>ceph-secret-example2.yaml
+oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/openstack-ansibleee-extravolumes.yaml
+</code></pre></div>
 <p>There are also a number of examples that feature remote execution. By default, all of them expect a compute node to be available in 10.0.0.4, adjust the inventory accordingly for your environment. This setup is compatible with the libvirt development environment deployment described in <a href="https://gitlab.cee.redhat.com/rhos-upgrades/data-plane-adoption-dev/-/blob/main/libvirt_podified_standalone.md">libvirt_podified_standalone</a>.</p>
 <p>The first remote example is ansibleee-playbook.yaml. This runs one of the standalone playbooks that is included in the default image.</p>
-<p>To access an external node, you need to provide the ssh private key so ansible can connect to the node. This is being expected to be provided by a "ssh-key-secret" Secret with this format:
-<div class="highlight"><pre><span></span><code>apiVersion: v1
-kind: Secret
-metadata:
-  name: ssh-key-secret
-  namespace: openstack
-data:
-  ssh-privatekey:  3390 bytes                                                                                       │
-│ ssh-publickey:   750 bytes
-</code></pre></div></p>
-<p>Once the key has been created, the CR should run the deploy-tripleo-os-configure.yml playbook on the external node:
-<div class="highlight"><pre><span></span><code>oc apply -f examples/ansibleee-playbook.yaml
-</code></pre></div></p>
-<p>The second remote example is ansibleee-role.yaml, which will run a certain number of tasks from specific standalone roles:
-<div class="highlight"><pre><span></span><code>oc apply -f examples/ansibleee-role.yaml
-</code></pre></div></p>
-<p>And the last remote example is ansibleee-play.yaml, which will run a CR-defined playbook using an inventory stored in a ConfigMap.
-<div class="highlight"><pre><span></span><code>oc apply -f examples/inventory-configmap.yaml
-oc apply -f examples/ansibleee-play.yaml
-</code></pre></div></p>
+<p>To access an external node, you need to provide the ssh private key so ansible can connect to the node. This is being expected to be provided by a "ssh-key-secret" Secret with this format:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Secret</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh-key-secret</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openstack</span>
+<span class="nt">data</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ssh-privatekey</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">3390 bytes                                                                                       │</span>
+<span class="w">  </span><span class="nt">ssh-publickey</span><span class="p">:</span><span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">750 bytes</span>
+</code></pre></div>
+<p>Once the key has been created, the CR should run the deploy-tripleo-os-configure.yml playbook on the external node:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/openstack-ansibleee-playbook.yaml
+</code></pre></div>
+<p>The second remote example is ansibleee-role.yaml, which will run a certain number of tasks from specific standalone roles:</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/openstack-ansibleee-role.yaml
+</code></pre></div>
+<p>And the last remote example is ansibleee-play.yaml, which will run a CR-defined playbook using an inventory stored in a ConfigMap.</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/inventory-configmap.yaml
+oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>examples/openstack-ansibleee-play.yaml
+</code></pre></div>
 <h2 id="example-development-cycle">Example Development Cycle<a class="headerlink" href="#example-development-cycle" title="Permanent link">#</a></h2>
 <p>The following has been verified on
 <a href="https://developers.redhat.com/products/openshift-local/overview">openshift-local</a>.</p>
 <p>The Makefile assumes you have docker installed. If you're using
 podman, then adjust accordingly (e.g. symlink docker to podman).</p>
-<p>Create the CRD managed by the operator. This must be deleted and re-created any time the api changes.
-<div class="highlight"><pre><span></span><code>oc create -f config/crd/bases/redhat.com_ansibleees.yaml
+<p>Create the CRD managed by the operator. This must be deleted and re-created any time the api changes.</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>config/crd/bases/ansibleee.openstack.org_openstackansibleees.yaml
 </code></pre></div>
-Build and run a local copy of the Ansible Execution Environment operator.
-<div class="highlight"><pre><span></span><code>make generate
-make manifests
-make build
+<p>Build and run a local copy of the OpenStack Ansible Execution Environment operator.</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>generate
+make<span class="w"> </span>manifests
+make<span class="w"> </span>build
 ./bin/manager
 </code></pre></div>
-Once the operator is running, create the examle CR to run the test playbook.
-<div class="highlight"><pre><span></span><code>oc create -f examples/ansibleee-playbook-local.yaml
+<p>Once the operator is running, create the examle CR to run the test playbook.</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>examples/openstack-ansibleee-playbook-local.yaml
 </code></pre></div>
-The operator will create a ansible pod and run the playbook. It will
-then move to a completed state.
-<div class="highlight"><pre><span></span><code>$ oc get pods | grep ansible
-ansibleee-playbook-local-q4pt9         0/1     Completed   0          24m
-$
+<p>The operator will create a ansible pod and run the playbook. It will
+then move to a completed state.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>oc<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ansible
+ansibleee-playbook-local-q4pt9<span class="w">         </span><span class="m">0</span>/1<span class="w">     </span>Completed<span class="w">   </span><span class="m">0</span><span class="w">          </span>24m
 </code></pre></div>
-To see the result of the playbook run, use <code>oc logs</code>.
-<div class="highlight"><pre><span></span><code>oc logs $(oc get pods | grep ansible | awk {&#39;print $1&#39;})
-</code></pre></div></p>
-<h2 id="using-ansibleee-operator-with-tripleo-ansible">Using ansibleee-operator with TripleO Ansible<a class="headerlink" href="#using-ansibleee-operator-with-tripleo-ansible" title="Permanent link">#</a></h2>
-<p>When the ansibleee-operator spawns a job the
-<a href="https://ansible-runner.readthedocs.io/en/stable">ansible-runner</a>
+<p>To see the result of the playbook run, use <code>oc logs</code>.</p>
+<div class="highlight"><pre><span></span><code>oc<span class="w"> </span>logs<span class="w"> </span><span class="k">$(</span>oc<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ansible<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span><span class="k">)</span>
+</code></pre></div>
+<h2 id="using-openstack-ansibleee-operator-with-edpm-ansible">Using openstack-ansibleee-operator with EDPM Ansible<a class="headerlink" href="#using-openstack-ansibleee-operator-with-edpm-ansible" title="Permanent link">#</a></h2>
+<p>When the openstack-ansibleee-operator spawns a job ansible execution environment crafted image
 can use playbooks and roles contained in its image.</p>
-<p>An openstack-tripleo-ansible-ee operator image is hosted at
-<a href="http://quay.io/tripleomastercentos9/openstack-tripleo-ansible-ee">quay.io/tripleomastercentos9/openstack-tripleo-ansible-ee</a>
-which contains <a href="https://opendev.org/openstack/tripleo-ansible">tripleo-ansible</a>.
-The following commands may be used to inspect the content.
-<div class="highlight"><pre><span></span><code>podman pull quay.io/tripleomastercentos9/openstack-tripleo-ansible-ee
-IMAGE_ID=$(podman images --filter reference=openstack-tripleo-ansible-ee --format &quot;{{.Id}}&quot;)
-podman run $IMAGE_ID ls -l
+<p>An openstack-ansibleee-runner image is hosted at
+<a href="https://quay.io/openstack-k8s-operators/openstack-ansibleee-runner">quay.io/openstack-k8s-operators/openstack-ansibleee-runner</a>
+which contains <a href="https://github.com/openstack-k8s-operators/edpm-ansible">edpm-ansible</a>.
+The following commands may be used to inspect the content.</p>
+<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>pull<span class="w"> </span>quay.io/openstack-k8s-operators/openstack-ansibleee-runner:latest
+<span class="nv">IMAGE_ID</span><span class="o">=</span><span class="k">$(</span>podman<span class="w"> </span>images<span class="w"> </span>--filter<span class="w"> </span><span class="nv">reference</span><span class="o">=</span>openstack-ansibleee-runner:latest<span class="w"> </span>--format<span class="w"> </span><span class="s2">&quot;{{.Id}}&quot;</span><span class="k">)</span>
+podman<span class="w"> </span>run<span class="w"> </span><span class="nv">$IMAGE_ID</span><span class="w"> </span>ls<span class="w"> </span>-l
 </code></pre></div>
-The container is built with
-<a href="https://specs.openstack.org/openstack/tripleo-specs/specs/victoria/simple-container-generation.html">TCIB</a>
-using a
-<a href="https://opendev.org/openstack/tripleo-common/src/branch/master/container-images/tcib/tripleo-ansible-ee/tripleo-ansible-ee.yaml">tripleo-ansible-ee.yaml</a>
-file hosted in tripleo-common. When a patch is merged in
-tripleo-ansible a new version of the openstack-tripleo-ansible-ee
-image is built by the CI system within minutes.</p>
+<p>The container is built by a github action from a <a href="https://github.com/openstack-k8s-operators/edpm-ansible/blob/main/openstack_ansibleee/Dockerfile">Dockerfile</a> in the <a href="https://github.com/openstack-k8s-operators/edpm-ansible">edpm-ansible</a> repository.</p>
 
   <hr>
 <div class="md-source-file">
@@ -504,10 +582,10 @@ image is built by the CI system within minutes.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="assets/javascripts/bundle.4b2c34cd.min.js"></script>
       
     
   </body>

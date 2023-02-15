@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Ansible EE Operator">
+        <meta name="description" content="OpenStack Ansible EE Operator">
       
       
-        <meta name="author" content="Ansible EE Team">
+        <meta name="author" content="OpenStack Team">
       
       
-        <link rel="canonical" href="https://openstack-k8s-operators.github.io/ansibleee-operator/ansibleee/">
+        <link rel="canonical" href="https://openstack-k8s-operators.github.io/openstack-ansibleee-operator/openstack_ansibleee/">
       
       
         <link rel="prev" href="..">
@@ -21,15 +21,15 @@
         <link rel="next" href="../contributing/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>AnsibleEE - Ansible EE Operator</title>
+        <title>OpenStackAnsibleEE - OpenStack Ansible EE Operator</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6b71719e.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0d440cfe.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
@@ -65,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
   
     
     
@@ -95,10 +95,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Ansible EE Operator" class="md-header__button md-logo" aria-label="Ansible EE Operator" data-md-component="logo">
+    <a href=".." title="OpenStack Ansible EE Operator" class="md-header__button md-logo" aria-label="OpenStack Ansible EE Operator" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../images/openstack-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -108,13 +107,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Ansible EE Operator
+            OpenStack Ansible EE Operator
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AnsibleEE
+              OpenStackAnsibleEE
             
           </span>
         </div>
@@ -124,7 +123,7 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -132,7 +131,7 @@
           
         
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
@@ -175,7 +174,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -184,13 +183,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/openstack-k8s-operators/ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/openstack-k8s-operators/openstack-ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    openstack-k8s-operators/ansibleee-operator
+    openstack-k8s-operators/openstack-ansibleee-operator
   </div>
 </a>
       </div>
@@ -219,23 +218,22 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Ansible EE Operator" class="md-nav__button md-logo" aria-label="Ansible EE Operator" data-md-component="logo">
+    <a href=".." title="OpenStack Ansible EE Operator" class="md-nav__button md-logo" aria-label="OpenStack Ansible EE Operator" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../images/openstack-logo.png" alt="logo">
 
     </a>
-    Ansible EE Operator
+    OpenStack Ansible EE Operator
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/openstack-k8s-operators/ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/openstack-k8s-operators/openstack-ansibleee-operator" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    openstack-k8s-operators/ansibleee-operator
+    openstack-k8s-operators/openstack-ansibleee-operator
   </div>
 </a>
     </div>
@@ -272,16 +270,16 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Custom Resources
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Custom Resources" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Custom Resources
@@ -297,17 +295,17 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          AnsibleEE
+          OpenStackAnsibleEE
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        AnsibleEE
+        OpenStackAnsibleEE
       </a>
       
         
@@ -339,34 +337,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ansibleee" class="md-nav__link">
-    AnsibleEE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ansibleeelist" class="md-nav__link">
-    AnsibleEEList
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ansibleeespec" class="md-nav__link">
-    AnsibleEESpec
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ansibleeestatus" class="md-nav__link">
-    AnsibleEEStatus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#config" class="md-nav__link">
     Config
   </a>
@@ -376,6 +346,27 @@
           <li class="md-nav__item">
   <a href="#importrole" class="md-nav__link">
     ImportRole
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openstackansibleee" class="md-nav__link">
+    OpenStackAnsibleEE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openstackansibleeelist" class="md-nav__link">
+    OpenStackAnsibleEEList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openstackansibleeespec" class="md-nav__link">
+    OpenStackAnsibleEESpec
   </a>
   
 </li>
@@ -469,34 +460,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ansibleee" class="md-nav__link">
-    AnsibleEE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ansibleeelist" class="md-nav__link">
-    AnsibleEEList
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ansibleeespec" class="md-nav__link">
-    AnsibleEESpec
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ansibleeestatus" class="md-nav__link">
-    AnsibleEEStatus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#config" class="md-nav__link">
     Config
   </a>
@@ -506,6 +469,27 @@
           <li class="md-nav__item">
   <a href="#importrole" class="md-nav__link">
     ImportRole
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openstackansibleee" class="md-nav__link">
+    OpenStackAnsibleEE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openstackansibleeelist" class="md-nav__link">
+    OpenStackAnsibleEEList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openstackansibleeespec" class="md-nav__link">
+    OpenStackAnsibleEESpec
   </a>
   
 </li>
@@ -548,24 +532,77 @@
 
 
 
-  <h1>AnsibleEE</h1>
+  <h1>OpenStackAnsibleEE</h1>
 
 <h3 id="custom-resources">Custom Resources<a class="headerlink" href="#custom-resources" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="#ansibleee">AnsibleEE</a></li>
+<li><a href="#openstackansibleee">OpenStackAnsibleEE</a></li>
 </ul>
 <h3 id="sub-resources">Sub Resources<a class="headerlink" href="#sub-resources" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="#ansibleeelist">AnsibleEEList</a></li>
-<li><a href="#ansibleeespec">AnsibleEESpec</a></li>
-<li><a href="#ansibleeestatus">AnsibleEEStatus</a></li>
 <li><a href="#config">Config</a></li>
 <li><a href="#importrole">ImportRole</a></li>
+<li><a href="#openstackansibleeelist">OpenStackAnsibleEEList</a></li>
+<li><a href="#openstackansibleeespec">OpenStackAnsibleEESpec</a></li>
 <li><a href="#role">Role</a></li>
 <li><a href="#task">Task</a></li>
 </ul>
-<h4 id="ansibleee">AnsibleEE<a class="headerlink" href="#ansibleee" title="Permanent link">#</a></h4>
-<p>AnsibleEE is the Schema for the ansibleees API</p>
+<h4 id="config">Config<a class="headerlink" href="#config" title="Permanent link">#</a></h4>
+<p>Config is a specification of where to mount a certain ConfigMap object</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Scheme</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Name is the name of the ConfigMap that we want to mount</td>
+<td>string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>mountpath</td>
+<td>MountPoint is the directory of the container where the ConfigMap will be mounted</td>
+<td>string</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#custom-resources">Back to Custom Resources</a></p>
+<h4 id="importrole">ImportRole<a class="headerlink" href="#importrole" title="Permanent link">#</a></h4>
+<p>ImportRole contains the actual rolename and tasks file name to execute</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Scheme</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td></td>
+<td>string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>tasks_from</td>
+<td></td>
+<td>string</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#custom-resources">Back to Custom Resources</a></p>
+<h4 id="openstackansibleee">OpenStackAnsibleEE<a class="headerlink" href="#openstackansibleee" title="Permanent link">#</a></h4>
+<p>OpenStackAnsibleEE is the Schema for the openstackansibleees API</p>
 <table>
 <thead>
 <tr>
@@ -585,20 +622,20 @@
 <tr>
 <td>spec</td>
 <td></td>
-<td><a href="#ansibleeespec">AnsibleEESpec</a></td>
+<td><a href="#openstackansibleeespec">OpenStackAnsibleEESpec</a></td>
 <td>false</td>
 </tr>
 <tr>
 <td>status</td>
 <td></td>
-<td><a href="#ansibleeestatus">AnsibleEEStatus</a></td>
+<td><a href="#openstackansibleeestatus">OpenStackAnsibleEEStatus</a></td>
 <td>false</td>
 </tr>
 </tbody>
 </table>
 <p><a href="#custom-resources">Back to Custom Resources</a></p>
-<h4 id="ansibleeelist">AnsibleEEList<a class="headerlink" href="#ansibleeelist" title="Permanent link">#</a></h4>
-<p>AnsibleEEList contains a list of AnsibleEE</p>
+<h4 id="openstackansibleeelist">OpenStackAnsibleEEList<a class="headerlink" href="#openstackansibleeelist" title="Permanent link">#</a></h4>
+<p>OpenStackAnsibleEEList contains a list of OpenStackAnsibleEE</p>
 <table>
 <thead>
 <tr>
@@ -618,14 +655,14 @@
 <tr>
 <td>items</td>
 <td></td>
-<td>[]<a href="#ansibleee">AnsibleEE</a></td>
+<td>[]<a href="#openstackansibleee">OpenStackAnsibleEE</a></td>
 <td>true</td>
 </tr>
 </tbody>
 </table>
 <p><a href="#custom-resources">Back to Custom Resources</a></p>
-<h4 id="ansibleeespec">AnsibleEESpec<a class="headerlink" href="#ansibleeespec" title="Permanent link">#</a></h4>
-<p>AnsibleEESpec defines the desired state of AnsibleEE</p>
+<h4 id="openstackansibleeespec">OpenStackAnsibleEESpec<a class="headerlink" href="#openstackansibleeespec" title="Permanent link">#</a></h4>
+<p>OpenStackAnsibleEESpec defines the desired state of OpenStackAnsibleEE</p>
 <table>
 <thead>
 <tr>
@@ -713,81 +750,6 @@
 <td>Role is the description of an Ansible Role If both Play and Role are specified, Play takes precedence</td>
 <td><a href="#role">Role</a></td>
 <td>false</td>
-</tr>
-</tbody>
-</table>
-<p><a href="#custom-resources">Back to Custom Resources</a></p>
-<h4 id="ansibleeestatus">AnsibleEEStatus<a class="headerlink" href="#ansibleeestatus" title="Permanent link">#</a></h4>
-<p>AnsibleEEStatus defines the observed state of AnsibleEE</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-<th>Scheme</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>nodes</td>
-<td>Nodes are the names of the ansibleee pods</td>
-<td>[]string</td>
-<td>true</td>
-</tr>
-</tbody>
-</table>
-<p><a href="#custom-resources">Back to Custom Resources</a></p>
-<h4 id="config">Config<a class="headerlink" href="#config" title="Permanent link">#</a></h4>
-<p>Config is a specification of where to mount a certain ConfigMap object</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-<th>Scheme</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>name</td>
-<td>Name is the name of the ConfigMap that we want to mount</td>
-<td>string</td>
-<td>true</td>
-</tr>
-<tr>
-<td>mountpath</td>
-<td>MountPoint is the directory of the container where the ConfigMap will be mounted</td>
-<td>string</td>
-<td>true</td>
-</tr>
-</tbody>
-</table>
-<p><a href="#custom-resources">Back to Custom Resources</a></p>
-<h4 id="importrole">ImportRole<a class="headerlink" href="#importrole" title="Permanent link">#</a></h4>
-<p>ImportRole contains the actual rolename and tasks file name to execute</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-<th>Scheme</th>
-<th>Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>name</td>
-<td></td>
-<td>string</td>
-<td>true</td>
-</tr>
-<tr>
-<td>tasks_from</td>
-<td></td>
-<td>string</td>
-<td>true</td>
 </tr>
 </tbody>
 </table>
@@ -882,7 +844,7 @@
   <small>
     
       Last update:
-      2023-01-02
+      2023-01-16
     
   </small>
 </div>
@@ -923,10 +885,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="../assets/javascripts/bundle.4b2c34cd.min.js"></script>
       
     
   </body>
